@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Nextstore</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+	
+	<!-- HEADER START -->
+	<header class="pt-[6px] shadow-md">
+		<div class="max-w-7xl mx-auto">
+			<div class="flex justify-end gap-56">
+				<a class='text-black text-base flex items-center gap-2' href="mailto:nextstore@mail.ru">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_651_11824)">
+							<path
+							d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM15 6L9 9.75L3 6V4.5L9 8.25L15 4.5V6Z"
+							fill="#1E1E1E" />
+						</g>
+						<defs>
+							<clipPath id="clip0_651_11824">
+								<rect width="18" height="18" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					
+					
+					Aloqa
+					uchun
+				</a>
+				
+				
+				<form action='https://echo.htmlacademy.ru' method='GET'>
+					<select class="">
+						<option value="UZ">UZ</option>
+						<option value="EN">EN</option>
+						<option value="RU">RU</option>
+					</select>
+				</form>
+			</div>
+			
+			<div class="flex justify-between">
+				<div class="py-3 flex justify-between">
+					<a href="./index.html">
+						<img src="./images/logo.svg" alt="Next Store logo">
+					</a>
+					
+					<button
+					class='flex  px-[18px] py-[11px] bg-gradient-to-l from-[#4d5ef6] to-[#f64d4d] rounded-lg text-base font-medium text-white uppercase before:content-[url("../images/menu.svg")] before:me-3'
+					type="button">Katalog</button>
+				</div>
+				
+				<div class="flex">
+					<div class="flex bg-gradient-to-r from-white-[60%] to-blue-[40%]">
+						<search class="items-center">
+							<form action="https://echo.htmlacademy.ru" method="get">
+								<input class='px-4 py-4 rounded' type="search" name="search" aria-label="search form input type name here..." placeholder="Maxsulotlarni izlash">
+							</form>
+						</search>
+						
+						<img class="items-center" src="./images/search (1).svg" width="24" height="24" alt="search icon">
+					</div>
+				</div>
+				<div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+	
+	<section>
+		<div class="max-w-7xl mx-auto">
+			<ul class="single-item">
+				<li class='h-40 bg-green'>SLider 1</li>
+				<li class='h-40 bg-green'>SLider 2</li>
+				<li class='h-40 bg-green'>SLider 3</li>
+				<li class='h-40 bg-green'>SLider 4</li>
+				<li class='h-40 bg-green'>SLider 5</li>
+				<li class='h-40 bg-green'>SLider 6</li>
+			</ul>
+		</div>
+	</section>
+	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<script>
+		$('.single-item').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			arrows: true,
+			responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}]
+		}
+		);
+	</script>
+</body>
+
+</html>
